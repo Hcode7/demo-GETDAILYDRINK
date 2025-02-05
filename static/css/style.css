@@ -15,12 +15,12 @@
 
 body,
 html {
-  width: 100%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--secondary-color);
   color: var(--dark-color);
+
 }
 
 .none {
@@ -36,18 +36,10 @@ p {
   margin-bottom: 1.25rem; /* 20px */
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  width: 6.25rem; /* 100px */
-}
 
 .background {
-  background: url("/static/images/minecraft-night-moon-rays-sky-temple-stars-hd-wallpaper-preview.jpg")
-    no-repeat center center fixed;
+  background: var(--secondary-color) url("/static/images/minecraft-night-moon-rays-sky-temple-stars-hd-wallpaper-preview.jpg") 
+  no-repeat center center fixed;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -110,13 +102,15 @@ input[type="checkbox"] {
 .buttons {
   display: block flex;
   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   margin-top: 1.25rem; /* 20px */
 }
 
 .result-container {
   background-color: rgba(0, 0, 0, 0.8);
   color: var(--secondary-color);
-  padding: 1.875rem; /* 30px */
+  padding: 3.875rem; /* 30px */
   border-radius: 0.625rem; /* 10px */
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3); /* 4px 8px */
   display: flex;

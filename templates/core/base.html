@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
   <body>
-    {% block content %}
-    {% endblock content %}
+      <br><br>
+      {% block content %}
+      {% endblock content %}
 
     {% include 'core/footer.html' %}
+    <br>
+    <br>
     <script src="{% static 'js/script.js' %}"></script>
   </body>
 </html>

@@ -15,4 +15,4 @@ class WaterIntakeForm(forms.Form):
         ]
         ,required=True)
     climate = forms.ChoiceField(choices=[('cold', 'Cold'), ('temperate' , 'Temperate'), ('hot', 'Hot')], required=True)
-    health_conditions = forms.ChoiceField(required=False, choices=[('pregnancy' , 'Pregnancy'), ('diabetes' , 'Diabetes'), ('kidney disease', 'Kidney Disease'), ('heart disease' , 'Heart Disease'), ('none', 'None')])
+    health_conditions = forms.ChoiceField(required=False, choices=[ ('none', 'None'), ('diabetes' , 'Diabetes'), ('kidney disease', 'Kidney Disease'), ('heart disease' , 'Heart Disease'),('pregnancy' , 'Pregnancy')])

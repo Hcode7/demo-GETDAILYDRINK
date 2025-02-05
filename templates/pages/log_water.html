@@ -10,7 +10,7 @@
 
     <br>
     <div class="welcome-background">
-      
+    <br><br>
     {% if total_water %}
     <div id="result" class="result-container">
         <h2>Your Recommended Daily Water Intake:</h2>
@@ -20,7 +20,7 @@
     </div>
     {% endif %}
     <br>
-      <h1>Welcome to getDailyDrink</h1>
+      <h1>Welcome to GetDailyDrink</h1>
       <p>Please take your time to get your daily drink recommendation</p>
       <button class="btn start-quiz">Start Quiz</button>
     </div>
@@ -30,7 +30,7 @@
       alert('{{ error }}')
     </script>
     {% endif %}
-
+    <br>
     <!-- Water Intake Form -->
     <form class="question-container" method="POST" action="{% url 'log_water' %}" id="water-form">
         {% csrf_token %}
@@ -83,7 +83,7 @@
         
         <button type="submit" class="btn">Submit</button>
     </form>
-    <br><br>
+    <br><br><br>
 
     <script>
       let reminderTimer; // Store the interval to stop the reminder

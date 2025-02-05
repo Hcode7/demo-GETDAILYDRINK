@@ -20,10 +20,7 @@ def log_water(request):
             total_water = calculte_daily_water_intake(gender, age, weight, climate, health_conditions, activity_level)
 
             total_water = round(total_water, 2)
-
-            # UserWaterUntake.objects.create(
-            #     water_amount=total_water,
-            # )
+ 
             return render(request, 'pages/log_water.html', {'form' : form, 'total_water' : total_water})
         else:
             print(form.errors)
